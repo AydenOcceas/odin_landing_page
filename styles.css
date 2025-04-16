@@ -3,7 +3,7 @@
 body {
     font-family: Roboto, sans-serif;
     font-size: 18px;
-    margin: 0 100px;
+    margin: 0;
     min-height: 100vh;
 }
 
@@ -64,7 +64,7 @@ button {
     background-color: #3882F6;
     border-style: solid;
     border: 0;
-    color: #F9FAF8;
+    color: #fff;
     padding: 4px 18px;
     border-radius: 6px;
 }
@@ -80,6 +80,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 150px;
 }
 
 .header ul {
@@ -91,15 +92,19 @@ button {
 
 .hero-container {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
     align-items: center;
+    padding: 100px 150px;
+    margin-bottom: 25px;
 }
 
 /* content style */
 
 .content-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 50 250px;
+    height: 400px;
 }
 
 .content-slide {
@@ -113,11 +118,13 @@ button {
 }
 
 /* quote style */
-.quote-container {
+.quote-container,
+.cta-container{
     height: 300px;
     display: flex;
     justify-content: center;
     justify-items: center;
+    padding: 50px 250px;
 }
 
 .quote {
@@ -131,7 +138,16 @@ button {
 
 /* Call to Action */
 
-
+.cta-card {
+    width: 3000px; /* this makes it so the entire thing doesn't collapse down. Probably a better solution out there. */
+    height: 100px;
+    padding: 16px 100px;
+    margin: 50px 150px;
+    border-radius: 24px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* footer style */
 
